@@ -5,17 +5,17 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
-* @author Pavel Vladi (mailto:w.h.81@mail.ru) 
+* @author Pavel Vladi (mailto:w.h.81@mail.ru). 
 * @version $id$
 * @since 0.1
 */
 
-public class CalculateTest{
+public class CalculateTest {
 	/**
-	* Test echo
+	* Test echo.
 	*/
 	@Test
-	public void whenTakeNameThenTreeEchoPlusName(){
+	public void whenTakeNameThenTreeEchoPlusName() {
 		String input = "Pavel Vladi";
 		String expect = "Echo, echo, echo : Pavel Vladi";
 		Calculate calc = new Calculate();
