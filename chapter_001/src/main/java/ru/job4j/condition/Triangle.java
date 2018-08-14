@@ -26,6 +26,7 @@ public class Triangle {
      * @return half-perimeter.
      */
     public double halfPerimiter(double ab, double ac, double bc) {
+
         return (ab + ac + bc) / 2;
     }
 
@@ -54,11 +55,8 @@ public class Triangle {
      * @param bc Length from point b c.
      * @return bool
      */
-    public boolean exist(double ab, double ac, double bc) {
-        if ((ab < (ac + bc)) || (ac < (ab + bc)) || (bc < (ac + ab))) {
-            return true;
-        }
-        return false;
+    private boolean exist(double ab, double ac, double bc) {
+        return ((ab < (ac + bc)) && (ac < (ab + bc)) && (bc < (ac + ab)));
     }
 
     public static void main(String[] args) {

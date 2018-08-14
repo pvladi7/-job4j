@@ -31,13 +31,4 @@ public class TriangleTest {
         assertThat(result, closeTo(expected, 0.1));
     }
 
-    @Test
-    public void checkExistTriangle() {
-        double ab = a.distanceTo(b);
-        double ac = a.distanceTo(c);
-        double bc = b.distanceTo(c);
-        boolean result = triangle.exist(ab, ac, bc);
-        boolean expected = true;
-        assertEquals(result, expected);
-    }
 }
