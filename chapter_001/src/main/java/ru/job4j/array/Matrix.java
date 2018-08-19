@@ -1,0 +1,21 @@
+package ru.job4j.array;
+
+/**
+ * class Natrix
+ */
+public class Matrix {
+    /**
+     * method multiply
+     * @param size
+     * @return table of multiply
+     */
+    public int[][] multiple(int size) {
+        int[][] table = new int[size][size];
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                table[i - 1][j - 1] =  i * j;
+            }
+        }
+        return table;
+    }
+}
