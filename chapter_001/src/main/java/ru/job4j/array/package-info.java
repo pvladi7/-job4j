@@ -1,5 +1,5 @@
 /**
-* Package for array task.
+* Package for loop task.
 *
 * @author Pavel Vladi (mailto:w.h.81@mail.ru)
 * @version $Id$
