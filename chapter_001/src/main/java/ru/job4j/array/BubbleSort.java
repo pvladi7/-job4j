@@ -17,7 +17,7 @@ public class BubbleSort {
         boolean flag;
         for (int i = 0; i <= length; i++) {
             flag = true;
-            if(i == length){
+            if (i == length) {
                 i = 0; ind = 0; length--;
             }
             if (array[ind] > array[ind + 1]) {
@@ -26,7 +26,9 @@ public class BubbleSort {
                 array[ind]     ^= array[ind + 1];
                 flag = false;
             }
-            if ((flag)&& (i == length)) {break;}
+            if ((flag) && (i == length)) {
+                break;
+            }
             ind++;
         }
         return array;
